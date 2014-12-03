@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">student participation and attendance tracker</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="user_name_view">User Name :</string>
+    <string name="password_view">Password :</string>
+    <string name="user_name_hint">please, type your user name</string>
+    <string name="login_botton_value">Log in</string>
+    <string name="signup_botton_value">Sign up</string>
+    <string name="title_activity_signup">Sign Up</string>
+    <string name="title_activity_login">Log in</string>
+    <string name="prof_id">ID :</string>
+    <string name="prof_name">Name :</string>
+    <string name="rewrite_password_textview">Rewrite Password :</string>
+    <string name="email_textview">Email :</string>
+    <string name="department_textview">Department :</string>
+    <string name="department_prompt">Choose a department</string>
+
+    <string-array name="department_arrays">
+        <item>CIS</item>
+        <item>BIT</item>
+    </string-array>
+
+    <string name="ok_button_text">OK</string>
+    <string name="back_button_text">BACK</string>
+    <string name="title_activity_course_management">Course Management</string>
+    <string name="name">Name :</string>
+    <string name="course_name_hint">Course Name</string>
+    <string name="id">ID :</string>
+    <string name="course_id_hint">Course ID</string>
+    <string name="year_textview">Year :</string>
+    <string name="days_prompt">Please, Choose course days</string>
+
+    <string-array name="days_arrays">
+        <item>Su/Tu/Th</item>
+        <item>Mo/We</item>
+    </string-array>
+
+    <string name="course_name_header">Course Name</string>
+    <string name="course_id_header">Course ID</string>
+    <string name="add_button_text">Add</string>
+    <string name="remove_button_text">Remove</string>
+    <string name="update_button_text">Update</string>
+    <string name="finish_button_text">Finish</string>
+    <string name="title_activity_courses_signup">Courses</string>
+    <string name="title_activity_student_management">Student Management</string>
+    <string name="student_name_header">Student Name</string>
+    <string name="student_id_header">Student ID</string>
+    <string name="student_email_header">Student Email</string>
+    <string name="student_email_textview">Email :</string>
+    <string name="student_name_hint">Student Name</string>
+    <string name="student_id_hint">Student ID</string>
+    <string name="student_email_hint">Student Email</string>
+    <string name="title_activity_courses_login">Courses</string>
+    <string name="manage_button_text">Manage</string>
+    <string name="logout_button_text">Log out</string>
+    <string name="title_activity_student_participation">Student Participation</string>
+    <string name="done_button_text">Done</string>
+    <string name="daily_report_button_text">Daily Report</string>
+    <string name="final_report_button_text">Final Report</string>
+    <string name="random_student_button_text">Random Student</string>
+    <string name="student_attendance_button_text">Student Attendance</string>
+    <string name="rank_header">Rank</string>
+    <string name="title_activity_student_attendance">Student Attendance</string>
+    <string name="state_header">State</string>
+    <string name="title_activity_student_participation_report">Student Participation Report</string>
+    <string name="title_activity_student_attendance_report">Student Attendance Report</string>
+    <string name="title_activity_test">Testing</string>
+    <string name="profile_button_text">Profile</string>
+    <string name="title_activity_profile_management">Profile Management</string>
+    <string name="save_button_text">Save</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="days_textview">Days :</string>
+    <string name="course_days_header">Days</string>
+    <string name="absence_header">Absence</string>
+
+</resources>

@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".StudentManagementActivity" >
+    
+    <RelativeLayout
+        android:id="@+id/part1_student_management"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp" >
+            
+            <TextView
+                android:id="@+id/student_name_textView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="25sp" />
+            
+            <EditText
+                android:id="@+id/student_name_editText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/student_name_textView"
+                android:ems="10"
+                android:hint="@string/student_name_hint"
+                android:textSize="20sp" >
+
+            <requestFocus android:layout_width="match_parent" />
+
+        	</EditText>
+
+           <TextView
+               android:id="@+id/student_id_textView"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:layout_alignBottom="@+id/student_id_editText"
+               android:layout_alignParentLeft="true"
+               android:paddingLeft="42dp"
+               android:text="@string/id"
+               android:textSize="25sp" />
+
+           <EditText
+               android:id="@+id/student_id_editText"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/student_name_editText"
+               android:layout_toRightOf="@+id/student_id_textView"
+               android:ems="10"
+               android:hint="@string/student_id_hint"
+               android:inputType="number"
+               android:textSize="20sp" />
+
+           <TextView
+               android:id="@+id/student_email_textView"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/student_id_textView"
+               android:layout_marginTop="17dp"
+               android:layout_toLeftOf="@+id/student_id_editText"
+               android:paddingLeft="15dp"
+               android:text="@string/student_email_textview"
+               android:textSize="25sp" />
+
+           <EditText
+               android:id="@+id/student_email_editText"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_alignTop="@+id/student_email_textView"
+               android:layout_toRightOf="@+id/student_email_textView"
+               android:ems="10"
+               android:hint="@string/student_email_hint"
+               android:inputType="textEmailAddress"
+               android:textSize="20sp" />
+           
+           <Button
+               android:id="@+id/back_student_management_button"
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_marginTop="24dp"
+               android:paddingLeft="40dp"
+               android:paddingRight="40dp"
+               android:text="@string/back_button_text" />
+
+   	 	
+        </RelativeLayout>
+
+       <TextView
+           android:id="@+id/textView1"
+           android:layout_width="match_parent"
+           android:layout_height="10dp"
+           android:layout_alignBottom="@+id/part1_student_management"
+           android:layout_centerVertical="true"
+           android:background="#424242" />
+
+    <RelativeLayout
+        android:id="@+id/part2_student_management"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:orientation="horizontal" >
+           
+           <LinearLayout
+            android:id="@+id/student_header_linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp" >
+
+            <CheckBox
+                android:id="@+id/all_student_header_checkBox"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/header_border"
+                android:text=""
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/student_name_header"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/header_border"
+                android:text="@string/student_name_header"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/student_id_header"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/header_border"
+                android:text="@string/student_id_header"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/student_email_header"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/header_border"
+                android:text="@string/student_email_header"
+                android:textSize="25sp" />
+        </LinearLayout>
+  
+           <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/student_header_linearLayout" >
+
+            <ListView
+                android:id="@+id/studentListView"
+                android:layout_width="650dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" >
+            </ListView>
+            
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/add_student_management_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/add_button_text" />
+
+        <Button
+            android:id="@+id/remove_student_management_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/add_student_management_button"
+            android:text="@string/remove_button_text" />
+        
+        <Button
+            android:id="@+id/update_student_management_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/remove_student_management_button"
+            android:text="@string/update_button_text" />
+        
+        <Button
+            android:id="@+id/finish_student_management_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/update_student_management_button"
+            android:text="@string/finish_button_text" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

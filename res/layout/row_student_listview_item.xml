@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <CheckBox
+        android:id="@+id/student_data_checkBox"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/border"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/student_name_data_tv"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/border"
+        android:text="student name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/student_id_data_tv"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/border"
+        android:text="student id"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/student_email_data_tv"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/border"
+        android:text="student email"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/student_name_student_attendance_data"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/border"
+        android:text="Student Name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/student_id_student_attendance_data"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/border"
+        android:text="Student ID"
+        android:textSize="20sp" />
+
+    <LinearLayout 
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/border" >
+
+        <ImageButton
+            android:id="@+id/absenceImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/absence1"
+            android:tag="off" />
+
+        <ImageButton
+            android:id="@+id/presenceImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/presence1"
+            android:tag="off" />
+
+        <ImageButton
+            android:id="@+id/excuseImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hand1"
+            android:tag="off" />
+
+    </LinearLayout>
+
+</LinearLayout>
